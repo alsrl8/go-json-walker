@@ -1,0 +1,14 @@
+# exec
+build/
+*.exe
+
+# testdata
+testdata/
+
+# logs
+logs/
+
+# benchmarks
+benchmarks/
+*.prof
+
