@@ -11,7 +11,7 @@ func main() {
 
 	profile.LogMemoryStats("start")
 
-	filename := "./testdata/large_random_json.json"
+	filename := "testdata/large_random_json.json"
 	profile.MonitorFunc("ReadJsonFile", func() {
 		_, err := parser.ReadJsonFile(filename)
 		if err != nil {

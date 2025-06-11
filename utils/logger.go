@@ -25,7 +25,7 @@ type GoLogger struct {
 
 func GetLogger() *GoLogger {
 	once.Do(func() {
-		file, err := os.Create("./logs/app.log")
+		file, err := os.Create("logs/app.log")
 		if err != nil {
 			log.Fatal(err)
 		}
