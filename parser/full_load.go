@@ -26,3 +26,20 @@ func readJsonFile(filename string) (map[string]interface{}, error) {
 
 	return result, nil
 }
+
+func SearchJsonFile(filename string, key string) (interface{}, error) {
+	return searchJsonFile(filename, key)
+}
+
+func searchJsonFile(filename string, key string) (interface{}, error) {
+	data, err := readJsonFile(filename)
+	if err != nil {
+		return nil, err
+	}
+
+	if value, exists := data[key]; exists {
+		return value, nil
+	}
+
+	return nil, nil
+}
