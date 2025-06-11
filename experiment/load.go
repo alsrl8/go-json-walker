@@ -11,7 +11,7 @@ func ProfileSearchJsonFile() {
 
 	filename := "testdata/flat/random_flat.json"
 	profile.MonitorFunc("SearchJsonFile", func() {
-		result, err := parser.SearchJsonFile(filename, "key_0")
+		result, err := parser.SearchJsonFile(filename, "key_1")
 		if err != nil {
 			utils.GetLogger().Error("Failed to search file", "err", err, "filename", filename)
 		}
@@ -19,7 +19,7 @@ func ProfileSearchJsonFile() {
 	})
 
 	profile.MonitorFunc("SearchJsonFile", func() {
-		result, err := parser.SearchJsonFile(filename, "key_0")
+		result, err := parser.SearchJsonFile(filename, "key_5475")
 		if err != nil {
 			utils.GetLogger().Error("Failed to search file", "err", err, "filename", filename)
 		}
@@ -27,7 +27,7 @@ func ProfileSearchJsonFile() {
 	})
 
 	profile.MonitorFunc("SearchJsonFile", func() {
-		result, err := parser.SearchJsonFile(filename, "key_0")
+		result, err := parser.SearchJsonFile(filename, "key_9570")
 		if err != nil {
 			utils.GetLogger().Error("Failed to search file", "err", err, "filename", filename)
 		}
